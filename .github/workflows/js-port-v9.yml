@@ -58,7 +58,7 @@ jobs:
           echo "::set-output name=VERSION_NAME::$(lib/lv_bindings/lvgl/scripts/find_version.sh)"
         id: version
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.3
+        uses: JamesIves/github-pages-deploy-action@v4.7.2
         with:
           token: ${{ secrets.LVGL_BOT_TOKEN }}
           commit-message: ${{ env.GITHUB_SHA }}
